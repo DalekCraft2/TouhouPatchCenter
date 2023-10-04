@@ -184,9 +184,11 @@ class TPCFmtMsg {
 TouhouPatchCenter::registerHook( 'thcrap_msg', 'TPCFmtMsg::onMsg' );
 TouhouPatchCenter::registerHook( 'thcrap_msg_assist', 'TPCFmtMsg::onMsgAssist' );
 TouhouPatchCenter::registerHook( 'thcrap_msg/footer', 'TPCFmtMsg::onMsgFooter' );
+TouhouPatchCenter::registerHook( 'thcrap_msg_parse', 'TPCFmtMsg::onMsgParse' );
 // Short versions
-TouhouPatchCenter::registerHook( 'dt', 'TPCFmtMsg::onMsg' );
 TouhouPatchCenter::registerHook( 'dialogtable', 'TPCFmtMsg::onMsg' );
+TouhouPatchCenter::registerHook( 'dt', 'TPCFmtMsg::onMsg' );
+TouhouPatchCenter::registerHook( 'dialogtable/footer', 'TPCFmtMsg::onMsgFooter' );
 TouhouPatchCenter::registerHook( 'dt/footer', 'TPCFmtMsg::onMsgFooter' );
 TouhouPatchCenter::registerHook( 'msgassist', 'TPCFmtMsg::onMsgAssist' );
 TouhouPatchCenter::registerHook( 'msgparse', 'TPCFmtMsg::onMsgParse' );
